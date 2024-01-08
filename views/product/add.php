@@ -11,33 +11,32 @@
 
 <div class="container mt-5">
     <h2 class="mb-4">Thêm Sản Phẩm</h2>
-    <form>
+    <form action="index.php?url=add-product" method="POST">
         <div class="mb-3">
             <label for="tenSanPham" class="form-label">Tên Sản Phẩm</label>
-            <input type="text" class="form-control" id="tenSanPham" placeholder="Nhập tên sản phẩm">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nhập tên sản phẩm">
         </div>
 
         <div class="mb-3">
             <label for="gia" class="form-label">Giá</label>
-            <input type="number" class="form-control" id="gia" placeholder="Nhập giá sản phẩm">
+            <input type="number" class="form-control" id="price" name="price" placeholder="Nhập giá sản phẩm">
         </div>
 
         <div class="mb-3">
             <label for="hinhAnh" class="form-label">Hình Ảnh</label>
-            <input type="file" class="form-control" id="hinhAnh">
+            <input type="file" class="form-control" name="image" id="image">
         </div>
 
         <div class="mb-3">
             <label for="danhMuc" class="form-label">Danh Mục</label>
-            <select class="form-select" id="danhMuc">
+            <select class="form-select" id="id_category" name="id_category">
                 <option value="danhMuc1">Danh Mục 1</option>
                 <option value="danhMuc2">Danh Mục 2</option>
                 <option value="danhMuc3">Danh Mục 3</option>
-                <!-- Thêm các danh mục khác tùy thuộc vào nhu cầu của bạn -->
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="submit" class="btn btn-primary" name="Save">Lưu</button>
     </form>
 </div>
 
